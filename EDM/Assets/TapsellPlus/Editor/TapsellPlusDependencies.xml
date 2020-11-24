@@ -1,6 +1,6 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:1.1.3">
+    <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.1">
       <repositories>
         <repository>https://dl.bintray.com/tapsellorg/maven</repository>
       </repositories>
@@ -12,10 +12,10 @@
       </repositories>
     </androidPackage>
 
-    <androidPackage spec="com.unity3d.ads:unity-ads:3.0.0">
+    <androidPackage spec="com.unity3d.ads:unity-ads:3.5.1">
     </androidPackage>
 
-    <androidPackage spec="com.google.android.gms:play-services-ads:17.2.1">
+    <androidPackage spec="com.google.android.gms:play-services-ads:19.5.0">
     </androidPackage>
 
     <!-- <androidPackage spec="com.facebook.android:audience-network-sdk:5.3.0">
@@ -30,7 +30,7 @@
     <!-- <androidPackage spec="com.vungle:publisher-sdk-android:6.4.11">
     </androidPackage> -->
 
-    <androidPackage spec="com.adcolony:sdk:3.3.11">
+    <androidPackage spec="com.adcolony:sdk:4.3.0">
       <repositories>
         <repository>https://adcolony.bintray.com/AdColony</repository>
       </repositories>

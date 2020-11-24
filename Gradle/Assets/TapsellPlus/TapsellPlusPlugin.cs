@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace TapsellPlusSDK {
     public class TapsellPlusPlugin {
         public virtual void initialize (string key) { }
@@ -20,5 +18,11 @@ namespace TapsellPlusSDK {
 
         public virtual void requestNativeBanner (string zoneId) { }
         public virtual void nativeBannerAdClicked (string zoneId, string adId) { }
+        
+        public virtual void sendResponseReportToAndroid(string zoneId, string adNetwork) { }
+
+        public virtual void sendWinReportToAndroid(string zoneId, string adNetworkZoneId, string adNetwork) { }
+        
+        public virtual void sendErrorReportToAndroid(string zoneId, string adNetwork, string message) { }
     }
 }

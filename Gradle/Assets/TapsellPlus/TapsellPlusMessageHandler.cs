@@ -16,6 +16,12 @@ namespace TapsellPlusSDK {
 			TapsellPlus.onNativeRequestResponse (result);
 		}
 
+		public void notifyTapsellNativeRequestResponse (String body) {
+			TapsellPlusNativeBannerAd result = JsonUtility.FromJson<TapsellPlusNativeBannerAd> (body);
+			Debug.Log ("notifyTapsellNativeRequestResponse:" + result.zoneId);
+			TapsellPlus.onNativeRequestResponse (result);
+		}
+
 		public void notifyRequestError (String body) {
 			TapsellError error = JsonUtility.FromJson<TapsellError> (body);
 			Debug.Log ("notifyRequestError:" + error.zoneId);

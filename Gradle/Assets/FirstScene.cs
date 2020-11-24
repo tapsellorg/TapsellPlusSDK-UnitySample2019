@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using GoogleMobileAds.Api;
+using System.Collections;
 using System.Collections.Generic;
 using TapsellPlusSDK;
 using UnityEngine;
@@ -9,7 +10,8 @@ public class FirstScene : MonoBehaviour {
   private const string TapsellPlusKey = "alsoatsrtrotpqacegkehkaiieckldhrgsbspqtgqnbrrfccrtbdomgjtahflchkqtqosa";
 
   void Start () {
-    TapsellPlus.initialize (TapsellPlusKey);
+
+        TapsellPlus.initialize (TapsellPlusKey);
   }
 
   public void changeScenes (string name) {
