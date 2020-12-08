@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 7911e1550997f074cbaea00d5eca0ccb
+guid: f7ad2228faf74a398ae7d46a32a25174
 labels:
-- gpsr
+- gvh
+- gvh_version-1.2.162
+- gvhp_exportpath-ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.162.dll
+- gvhp_targets-editor
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -14,11 +17,6 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
-      Android: Android
-    second:
-      enabled: 1
-      settings: {}
-  - first:
       Any: 
     second:
       enabled: 0
@@ -26,9 +24,15 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
-      enabled: 0
+      enabled: 1
       settings:
         DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
   userData: 
   assetBundleName: 
   assetBundleVariant: 

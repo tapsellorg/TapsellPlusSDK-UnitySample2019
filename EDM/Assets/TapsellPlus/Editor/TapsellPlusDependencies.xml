@@ -1,6 +1,6 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.1">
+    <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.2">
       <repositories>
         <repository>https://dl.bintray.com/tapsellorg/maven</repository>
       </repositories>
@@ -35,6 +35,12 @@
         <repository>https://adcolony.bintray.com/AdColony</repository>
       </repositories>
     </androidPackage>
+
+    <!-- <androidPackage spec="com.google.android.gms:play-services-ads-identifier:17.0.0">
+    </androidPackage>
+
+    <androidPackage spec="com.google.android.gms:play-services-base:17.5.0">
+    </androidPackage> -->
     
   </androidPackages>
 </dependencies>
