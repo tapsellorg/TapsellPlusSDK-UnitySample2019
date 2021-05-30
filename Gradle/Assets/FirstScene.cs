@@ -1,20 +1,19 @@
-﻿using GoogleMobileAds.Api;
-using System.Collections;
-using System.Collections.Generic;
-using TapsellPlusSDK;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FirstScene : MonoBehaviour {
 
-  private const string TapsellPlusKey = "alsoatsrtrotpqacegkehkaiieckldhrgsbspqtgqnbrrfccrtbdomgjtahflchkqtqosa";
+    private const string TapsellPlusKey = "alsoatsrtrotpqacegkehkaiieckldhrgsbspqtgqnbrrfccrtbdomgjtahflchkqtqosa";
 
-  void Start () {
+    void Start () {
 
-        TapsellPlus.initialize (TapsellPlusKey);
-  }
+        TapsellPlus.TapsellPlus.Initialize(TapsellPlusKey,
+            adNetworkName => Debug.Log(adNetworkName + " Initialized Successfully."),
+            error => Debug.Log(error.ToString()));
+        TapsellPlus.TapsellPlus.SetGdprConsent(true);
+    }
 
-  public void changeScenes (string name) {
-    SceneManager.LoadScene (name);
-  }
+    public void ChangeScenes (string sceneName) {
+        SceneManager.LoadScene (sceneName);
+    }
 }

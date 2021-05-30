@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstScene.unity
     guid: 42745c12921b2ef23a4064236ebb1647
   - enabled: 1
-    path: Assets/Scenes/RwardedVideoScene.unity
+    path: Assets/Scenes/RewardedVideoScene.unity
     guid: 473670b76c1813d8c8c05a3b8be546b5
   - enabled: 1
     path: Assets/Scenes/InterstitialScene.unity

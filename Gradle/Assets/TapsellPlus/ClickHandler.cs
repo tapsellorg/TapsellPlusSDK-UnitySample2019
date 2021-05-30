@@ -1,11 +1,11 @@
 ﻿using System;
 using UnityEngine;
 
-namespace TapsellPlusSDK
+namespace TapsellPlus
 {
     public class ClickHandler : MonoBehaviour
     {
-        public event Action ONClick = null;
+        public event Action ONClick;
         private void OnMouseUpAsButton()
         {
             ONClick?.Invoke();
