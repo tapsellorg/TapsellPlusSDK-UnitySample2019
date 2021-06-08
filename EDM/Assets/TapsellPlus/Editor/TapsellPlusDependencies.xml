@@ -1,46 +1,10 @@
-<dependencies>
-  <androidPackages>
-    <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:1.2.2">
-      <repositories>
-        <repository>https://dl.bintray.com/tapsellorg/maven</repository>
-      </repositories>
-    </androidPackage>
-
-    <androidPackage spec="com.chartboost:chartboost-sdk:8.1.0">
-      <repositories>
-        <repository>https://chartboostmobile.bintray.com/Chartboost</repository>
-      </repositories>
-    </androidPackage>
-
-    <androidPackage spec="com.unity3d.ads:unity-ads:3.5.1">
-    </androidPackage>
-
-    <androidPackage spec="com.google.android.gms:play-services-ads:19.5.0">
-    </androidPackage>
-
-    <!-- <androidPackage spec="com.facebook.android:audience-network-sdk:5.3.0">
-    </androidPackage>
-
-    <androidPackage spec="com.facebook.android:facebook-android-sdk:5.2.0">
-    </androidPackage> -->
-
-    <androidPackage spec="com.applovin:applovin-sdk:9.7.2">
-    </androidPackage>
-
-    <!-- <androidPackage spec="com.vungle:publisher-sdk-android:6.4.11">
-    </androidPackage> -->
-
-    <androidPackage spec="com.adcolony:sdk:4.3.0">
-      <repositories>
-        <repository>https://adcolony.bintray.com/AdColony</repository>
-      </repositories>
-    </androidPackage>
-
-    <!-- <androidPackage spec="com.google.android.gms:play-services-ads-identifier:17.0.0">
-    </androidPackage>
-
-    <androidPackage spec="com.google.android.gms:play-services-base:17.5.0">
-    </androidPackage> -->
-    
-  </androidPackages>
+﻿<dependencies>
+    <androidPackages>
+        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.2"/>
+        <androidPackage spec="com.google.android.gms:play-services-ads:19.8.0"/>
+        <androidPackage spec="com.unity3d.ads:unity-ads:3.7.1"/>
+        <androidPackage spec="com.chartboost:chartboost-sdk:8.2.0"/>
+        <androidPackage spec="com.adcolony:sdk:4.5.0"/>
+        <androidPackage spec="com.applovin:applovin-sdk:9.15.3"/>
+    </androidPackages>
 </dependencies>

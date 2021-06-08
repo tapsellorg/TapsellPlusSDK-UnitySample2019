@@ -1,28 +1,81 @@
-namespace TapsellPlusSDK {
-    public class TapsellPlusPlugin {
-        public virtual void initialize (string key) { }
+namespace TapsellPlus
+{
+    public class TapsellPlusPlugin
+    {
+        public virtual void Initialize(string key)
+        {
+        }
 
-        public virtual void setDebugMode (int logLevel) { }
+        public virtual void SetDebugMode(int logLevel)
+        {
+        }
 
-        public virtual void setGDPRConsent (bool consent) { }
+        public virtual void SetGdprConsent(bool consent)
+        {
+        }
 
-        public virtual void addFacebookTestDevice (string hash) { }
+        public virtual void RequestRewardedVideoAd(string responseId)
+        {
+        }
 
-        public virtual void requestRewardedVideo (string zoneId) { }
-        public virtual void requestInterstitial (string zoneId) { }
-        public virtual void showAd (string zoneId) { }
+        public virtual void ShowRewardedVideoAd(string responseId)
+        {
+        }
 
-        public virtual void showBannerAd (string zoneId, int bannerType, int horizontalGravity, int verticalGravity) { }
-        public virtual void hideBanner () { }
-        public virtual void displayBanner () { }
+        public virtual void RequestInterstitialAd(string zoneId)
+        {
+        }
 
-        public virtual void requestNativeBanner (string zoneId) { }
-        public virtual void nativeBannerAdClicked (string zoneId, string adId) { }
-        
-        public virtual void sendResponseReportToAndroid(string zoneId, string adNetwork) { }
+        public virtual void ShowInterstitialAd(string responseId)
+        {
+        }
 
-        public virtual void sendWinReportToAndroid(string zoneId, string adNetworkZoneId, string adNetwork) { }
-        
-        public virtual void sendErrorReportToAndroid(string zoneId, string adNetwork, string message) { }
+        public virtual void RequestStandardBannerAd(string responseId, int bannerSize)
+        {
+        }
+
+        public virtual void ShowStandardBannerAd(string zoneId, int horizontalGravity, int verticalGravity)
+        {
+        }
+
+        public virtual void DestroyStandardBannerAd(string responseId)
+        {
+        }
+
+        public virtual void DisplayStandardBannerAd()
+        {
+        }
+
+        public virtual void HideStandardBannerAd()
+        {
+        }
+
+        public virtual void RequestNativeBannerAd(string zoneId)
+        {
+        }
+
+        public virtual void ShowNativeBannerAd(string responseId)
+        {
+        }
+
+        public virtual void NativeBannerAdClicked(string responseId)
+        {
+        }
+
+        public virtual void SendAdMobNativeAdSuccessReport(string responseId, string adNetworkZoneId)
+        {
+        }
+
+        public virtual void SendAdMobNativeAdWin(string responseId, string adNetworkZoneId)
+        {
+        }
+
+        public virtual void SendAdMobNativeAdShowStart(string responseId, string adNetworkZoneId)
+        {
+        }
+
+        public virtual void SendAdMobNativeAdFailedReport(string zoneId, string responseId, string json)
+        {
+        }
     }
 }

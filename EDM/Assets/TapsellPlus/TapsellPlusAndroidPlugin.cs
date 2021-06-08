@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TapsellPlusSDK
+namespace TapsellPlus
 {
     public class TapsellPlusAndroidPlugin : TapsellPlusPlugin
     {
@@ -9,7 +9,7 @@ namespace TapsellPlusSDK
 
         private void setJavaObject()
         {
-            tapsellPlus = new AndroidJavaClass("ir.tapsell.plus.TapsellPlusUnity");
+            tapsellPlus = new AndroidJavaClass("ir.tapsell.plus.TapsellPlus");
         }
 
         private void initializeSDK(string key)
@@ -17,82 +17,90 @@ namespace TapsellPlusSDK
             tapsellPlus?.CallStatic("initialize", key);
         }
 
-        public override void initialize(string key)
+        public override void Initialize(string key)
         {
             setJavaObject();
             initializeSDK(key);
         }
 
-        public override void setDebugMode(int logLevel)
+        public override void SetDebugMode(int logLevel)
         {
             tapsellPlus?.CallStatic("setDebugMode", logLevel);
         }
 
-        public override void setGDPRConsent(bool consent)
+        public override void SetGdprConsent(bool consent)
         {
             tapsellPlus?.CallStatic("setGDPRConsent", consent);
         }
 
-        public override void addFacebookTestDevice(string hash)
+        public override void RequestRewardedVideoAd(string zoneId)
         {
-            tapsellPlus?.CallStatic("addFacebookTestDevice", hash);
+            tapsellPlus?.CallStatic("requestRewardedVideoAd", zoneId);
         }
 
-        public override void requestRewardedVideo(string zoneId)
+        public override void ShowRewardedVideoAd(string responseId)
         {
-            tapsellPlus?.CallStatic("requestRewardedVideo", zoneId);
+            tapsellPlus?.CallStatic("showRewardedVideoAd", responseId);
         }
 
-        public override void requestInterstitial(string zoneId)
+        public override void RequestInterstitialAd(string zoneId)
         {
-            tapsellPlus?.CallStatic("requestInterstitial", zoneId);
+            tapsellPlus?.CallStatic("requestInterstitialAd", zoneId);
         }
 
-        public override void requestNativeBanner(string zoneId)
+        public override void ShowInterstitialAd(string responseId)
         {
-            tapsellPlus?.CallStatic("requestNativeBanner", zoneId);
+            tapsellPlus?.CallStatic("showInterstitialAd", responseId);
         }
-
-        public override void showAd(string zoneId)
+        
+        public override void RequestStandardBannerAd(string zoneId, int bannerSize)
         {
-            tapsellPlus?.CallStatic("showAd", zoneId);
+            tapsellPlus?.CallStatic("requestStandardBannerAd", zoneId, bannerSize);
         }
-
-        public override void showBannerAd(string zoneId, int bannerType, int horizontalGravity, int verticalGravity)
+        public override void ShowStandardBannerAd(string responseId, int horizontalGravity, int verticalGravity)
         {
-            tapsellPlus?.CallStatic("showBannerAd", zoneId, bannerType, horizontalGravity, verticalGravity);
+            tapsellPlus?.CallStatic("showStandardBannerAd", responseId, horizontalGravity, verticalGravity);
         }
-
-        public override void hideBanner()
+        public override void DestroyStandardBannerAd(string responseId)
         {
-            tapsellPlus?.CallStatic("hideBanner");
+            tapsellPlus?.CallStatic("destroyStandardBannerAd", responseId);
         }
-
-        public override void displayBanner()
+        public override void DisplayStandardBannerAd()
         {
-            tapsellPlus?.CallStatic("displayBanner");
+            tapsellPlus?.CallStatic("displayStandardBannerAd");
         }
-
-        public override void nativeBannerAdClicked(string zoneId, string adId)
+        public override void HideStandardBannerAd()
         {
-            tapsellPlus?.CallStatic("nativeBannerAdClicked", zoneId, adId);
+            tapsellPlus?.CallStatic("hideStandardBannerAd");
         }
-
-        public override void sendResponseReportToAndroid(string zoneId, string adNetwork)
+        public override void RequestNativeBannerAd(string zoneId)
         {
-            tapsellPlus?.CallStatic("sendResponseReportToAndroid", zoneId, adNetwork);
+            tapsellPlus?.CallStatic("requestNativeBannerAd", zoneId);
         }
-
-        public override void sendWinReportToAndroid(string zoneId, string adNetworkZoneId, string adNetwork)
+        public override void ShowNativeBannerAd(string zoneId)
         {
-            tapsellPlus?.CallStatic("sendWinReportToAndroid", zoneId, adNetworkZoneId, adNetwork);
+            tapsellPlus?.CallStatic("showNativeBannerAd", zoneId);
         }
-
-        public override void sendErrorReportToAndroid(string zoneId, string adNetwork, string message)
+        public override void NativeBannerAdClicked(string responseId)
         {
-            tapsellPlus?.CallStatic("sendErrorReportToAndroid", zoneId, adNetwork, message);
+            tapsellPlus?.CallStatic("nativeBannerAdClicked", responseId);
         }
-
+        public override void SendAdMobNativeAdSuccessReport(string responseId, string adNetworkZoneId)
+        {
+            tapsellPlus?.CallStatic("sendAdMobNativeAdSuccessReport", responseId, adNetworkZoneId);
+        }
+        public override void SendAdMobNativeAdWin(string responseId, string adNetworkZoneId)
+        {
+            tapsellPlus?.CallStatic("sendAdMobNativeAdWin", responseId, adNetworkZoneId);
+        }
+        public override void SendAdMobNativeAdShowStart(string responseId, string adNetworkZoneId)
+        {
+            tapsellPlus?.CallStatic("sendAdMobNativeAdShowStart", responseId, adNetworkZoneId);
+        }
+        public override void SendAdMobNativeAdFailedReport(string zoneId, string responseId, string json)
+        {
+            tapsellPlus?.CallStatic("sendAdMobNativeAdFailedReport", zoneId, responseId, json);
+        }
 #endif
     }
 }

@@ -1,37 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TapsellPlusSDK;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RewardedScene : MonoBehaviour {
-	private readonly string ZONE_ID = "5cfaa802e8d17f0001ffb28e";
+	
+	private const string ZoneID = "5cfaa802e8d17f0001ffb28e";
+	private static string _responseId;
 
 	public void Request () {
-		TapsellPlus.requestRewardedVideo (ZONE_ID,
+		TapsellPlus.TapsellPlus.RequestRewardedVideoAd (ZoneID,
 
-			(string zoneId) => {
-				Debug.Log ("on response " + zoneId);
+			tapsellPlusAdModel => {
+				Debug.Log ("on response " + tapsellPlusAdModel.responseId);
+				_responseId = tapsellPlusAdModel.responseId;
 			},
-			(TapsellError error) => {
+			error => {
 				Debug.Log ("Error " + error.message);
 			}
 		);
 	}
 
 	public void Show () {
-		TapsellPlus.showAd (ZONE_ID,
+		TapsellPlus.TapsellPlus.ShowRewardedVideoAd(_responseId,
 
-			(string zoneId) => {
-				Debug.Log ("onOpenAd " + zoneId);
+			tapsellPlusAdModel => {
+				Debug.Log ("onOpenAd " + tapsellPlusAdModel.zoneId);
 			},
-			(string zoneId) => {
-				Debug.Log ("onCloseAd " + zoneId);
+			tapsellPlusAdModel => {
+				Debug.Log ("onReward " + tapsellPlusAdModel.zoneId);
 			},
-			(string zoneId) => {
-				Debug.Log ("onReward " + zoneId);
+			tapsellPlusAdModel => {
+				Debug.Log ("onCloseAd " + tapsellPlusAdModel.zoneId);
 			},
-			(TapsellError error) => {
-				Debug.Log ("onError " + error.message);
+			error => {
+				Debug.Log ("onError " + error.errorMessage);
 			}
 		);
 	}

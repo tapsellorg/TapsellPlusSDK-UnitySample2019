@@ -1,78 +1,93 @@
-﻿using GoogleMobileAds.Api;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using GoogleMobileAds.Api;
+using TapsellPlus.models;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TapsellPlusSDK
+namespace TapsellPlus
 {
-    [Serializable]
-    public class TapsellPlusNativeBannerAd
+    public class TapsellPlusNativeBannerAd : TapsellPlusAdModel
     {
-        public string zoneId;
-        public string adId;
-        public string adNetwork;
-        public string title;
-        public string description;
-        public string callToActionText;
-        public string adNetworkZoneId;
+        public readonly string adNetwork;
+        public readonly string title;
+        public readonly string description;
+        public readonly string callToActionText;
+        public readonly Texture2D portraitBannerImage;
+        public readonly Texture2D landscapeBannerImage;
+        public readonly Texture2D iconImage;
+        private readonly UnifiedNativeAd _unifiedNativeAd;
 
-        public string iconUrl;
-        public string portraitStaticImageUrl;
-        public string landscapeStaticImageUrl;
-
-        public Texture2D portraitBannerImage;
-        public Texture2D landscapeBannerImage;
-        public Texture2D iconImage;
-        public UnifiedNativeAd UnifiedNativeAd { get; set; }
+        public TapsellPlusNativeBannerAd(string responseId, string zoneId,
+            string adNetwork, string title,
+            string description, string callToActionText,
+            Texture2D portraitBannerImage, Texture2D landscapeBannerImage,
+            Texture2D iconImage, UnifiedNativeAd unifiedNativeAd) : base(responseId, zoneId)
+        {
+            this.adNetwork = adNetwork;
+            this.title = title;
+            this.description = description;
+            this.callToActionText = callToActionText;
+            this.portraitBannerImage = portraitBannerImage;
+            this.landscapeBannerImage = landscapeBannerImage;
+            this.iconImage = iconImage;
+            _unifiedNativeAd = unifiedNativeAd;
+        }
 
         private void clicked()
         {
-            TapsellPlus.nativeBannerAdClicked(zoneId, adId);
+            global::TapsellPlus.TapsellPlus.NativeBannerAdClicked(responseId);
         }
 
         public void RegisterBodyTextGameObject(GameObject gameObject)
         {
-            if (callTapsellRegister(gameObject)) return;
-            UnifiedNativeAd.RegisterBodyTextGameObject(gameObject);
+            if (CallTapsellRegister(gameObject)) return;
+            _unifiedNativeAd.RegisterBodyTextGameObject(gameObject);
         }
         public void RegisterCallToActionGameObject(GameObject gameObject)
         {
-            if (callTapsellRegister(gameObject)) return;
-            UnifiedNativeAd.RegisterCallToActionGameObject(gameObject);
+            if (CallTapsellRegister(gameObject)) return;
+            _unifiedNativeAd.RegisterCallToActionGameObject(gameObject);
         }
         public void RegisterHeadlineTextGameObject(GameObject gameObject)
         {
-            if (callTapsellRegister(gameObject)) return;
-            UnifiedNativeAd.RegisterHeadlineTextGameObject(gameObject);
+            if (CallTapsellRegister(gameObject)) return;
+            _unifiedNativeAd.RegisterHeadlineTextGameObject(gameObject);
         }
         public void RegisterIconImageGameObject(GameObject gameObject)
         {
-            if (callTapsellRegister(gameObject)) return;
-            UnifiedNativeAd.RegisterIconImageGameObject(gameObject);
+            if (CallTapsellRegister(gameObject)) return;
+            _unifiedNativeAd.RegisterIconImageGameObject(gameObject);
         }
         public void RegisterImageGameObject(GameObject gameObject)
         {
-            if (callTapsellRegister(gameObject)) return;
+            if (CallTapsellRegister(gameObject)) return;
             var list = new List<GameObject> {gameObject.gameObject};
-            UnifiedNativeAd.RegisterImageGameObjects(list);
+            _unifiedNativeAd.RegisterImageGameObjects(list);
         }
-
         public void Register3DItem(GameObject gameObject)
         {
             RegisterTapsellComponent(gameObject);
             
         }
-
-        private bool callTapsellRegister(GameObject gameObject)
+        private bool CallTapsellRegister(GameObject gameObject)
         {
-            if (UnifiedNativeAd != null) return false;
+            UnRegisterTapsellComponent(gameObject);
+            if (_unifiedNativeAd != null) return false;
             RegisterTapsellComponent(gameObject);
                 
             return true;
 
         }
-
+        private static void UnRegisterTapsellComponent(GameObject gameObject)
+        {
+            if (!(gameObject.transform as RectTransform)) return;
+            var component = gameObject.GetComponent<Button>();
+            if (component == null)
+            {
+                component = gameObject.AddComponent<Button>();
+            }
+            component.onClick.RemoveAllListeners();
+        }
         private void RegisterTapsellComponent(GameObject gameObject)
         {
             

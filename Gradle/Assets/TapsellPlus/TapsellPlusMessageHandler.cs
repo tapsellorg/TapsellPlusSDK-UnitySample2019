@@ -1,52 +1,63 @@
-﻿using System;
-using TapsellPlusSDK;
+﻿using TapsellPlus.models;
 using UnityEngine;
 
-namespace TapsellPlusSDK {
+namespace TapsellPlus {
+	/*
+	 * To handle callbacks that call in Android
+	 */
 	public class TapsellPlusMessageHandler : MonoBehaviour {
-
-		public void notifyRequestResponse (String zoneId) {
-			Debug.Log ("notifyRequestResponse:" + zoneId);
-			TapsellPlus.onRequestResponse (zoneId);
+		public void NotifyOnInitializeSuccess(string adNetworkName)
+		{
+			Debug.Log ("NotifyOnInitializeSuccess() Called.");
+			global::TapsellPlus.TapsellPlus.OnInitializeSuccess(adNetworkName);
 		}
-
-		public void notifyNativeRequestResponse (String body) {
-			TapsellPlusNativeBannerAd result = JsonUtility.FromJson<TapsellPlusNativeBannerAd> (body);
-			Debug.Log ("notifyNativeRequestResponse:" + result.zoneId);
-			TapsellPlus.onNativeRequestResponse (result);
+		public void NotifyOnInitializeFailed(string json)
+		{
+			Debug.Log ("NotifyOnInitializeFailed() Called.");
+			var tapsellPlusAdNetworkError = JsonUtility.FromJson<TapsellPlusAdNetworkError>(json);
+			global::TapsellPlus.TapsellPlus.OnInitializeFailed(tapsellPlusAdNetworkError);
 		}
-
-		public void notifyTapsellNativeRequestResponse (String body) {
-			TapsellPlusNativeBannerAd result = JsonUtility.FromJson<TapsellPlusNativeBannerAd> (body);
-			Debug.Log ("notifyTapsellNativeRequestResponse:" + result.zoneId);
-			TapsellPlus.onNativeRequestResponse (result);
+		public void NotifyOnRequestResponse(string json) {
+			Debug.Log ("NotifyOnRequestResponse() Called.");
+			var tapsellPlusAdModel = JsonUtility.FromJson<TapsellPlusAdModel> (json);
+			global::TapsellPlus.TapsellPlus.OnRequestResponse(tapsellPlusAdModel);
 		}
-
-		public void notifyRequestError (String body) {
-			TapsellError error = JsonUtility.FromJson<TapsellError> (body);
-			Debug.Log ("notifyRequestError:" + error.zoneId);
-			TapsellPlus.onRequestError (error);
+		public void NotifyOnRequestError(string json) {
+			Debug.Log ("NotifyOnRequestError() Called.");
+			var tapsellPlusRequestError = JsonUtility.FromJson<TapsellPlusRequestError> (json);
+			global::TapsellPlus.TapsellPlus.OnRequestError(tapsellPlusRequestError);
 		}
-
-		public void notifyAdOpened (String zoneId) {
-			Debug.Log ("notifyAdOpened:" + zoneId);
-			TapsellPlus.onOpenAd (zoneId);
+		public void NotifyOnAdOpened(string json) {
+			Debug.Log ("NotifyOnAdOpened() Called.");
+			var tapsellPlusAdModel = JsonUtility.FromJson<TapsellPlusAdModel> (json);
+			global::TapsellPlus.TapsellPlus.OnAdOpened(tapsellPlusAdModel);
 		}
-
-		public void notifyAdClosed (String zoneId) {
-			Debug.Log ("notifyAdClosed:" + zoneId);
-			TapsellPlus.onCloseAd (zoneId);
+		public void NotifyOnAdClosed(string json) {
+			Debug.Log ("NotifyOnAdClosed() Called.");
+			var tapsellPlusAdModel = JsonUtility.FromJson<TapsellPlusAdModel> (json);
+			global::TapsellPlus.TapsellPlus.OnAdClosed(tapsellPlusAdModel);
 		}
-
-		public void notifyReward (String zoneId) {
-			Debug.Log ("notifyReward:" + zoneId);
-			TapsellPlus.onReward (zoneId);
+		public void NotifyOnAdRewarded(string json) {
+			Debug.Log ("NotifyOnAdRewarded() Called.");
+			var tapsellPlusAdModel = JsonUtility.FromJson<TapsellPlusAdModel> (json);
+			global::TapsellPlus.TapsellPlus.OnAdRewarded(tapsellPlusAdModel);
 		}
-
-		public void notifyError (String body) {
-			TapsellError error = JsonUtility.FromJson<TapsellError> (body);
-			Debug.Log ("notifyError:" + error.zoneId);
-			TapsellPlus.onError (error);
+		public void NotifyOnAdShowError(string json) {
+			Debug.Log ("NotifyOnAdShowError() Called.");
+			var tapsellPlusErrorModel = JsonUtility.FromJson<TapsellPlusErrorModel> (json);
+			global::TapsellPlus.TapsellPlus.OnAdShowError(tapsellPlusErrorModel);
+		}
+		public void NotifyTapsellNativeAdOpened(string json)
+		{
+			Debug.Log ("NotifyTapsellNativeAdOpened() Called.");
+			var tapsellPlusNativeAd = JsonUtility.FromJson<TapsellPlusNativeAd> (json);
+			global::TapsellPlus.TapsellPlus.OnTapsellNativeAdOpened(tapsellPlusNativeAd);
+		}
+		public void NotifyAdMobNativeAdRequestResponse(string json)
+		{
+			Debug.Log ("NotifyAdMobNativeAdRequestResponse() Called.");
+			var adMobNativeAd = JsonUtility.FromJson<AdMobNativeAd> (json);
+			global::TapsellPlus.TapsellPlus.OnAdMobNativeAdRequest(adMobNativeAd);	
 		}
 	}
 }
