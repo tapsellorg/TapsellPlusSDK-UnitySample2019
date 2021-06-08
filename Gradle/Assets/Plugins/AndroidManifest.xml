@@ -38,6 +38,6 @@
 
  </application>
 
-  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="30" />
 
 </manifest>

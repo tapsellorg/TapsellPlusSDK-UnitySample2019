@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 36
+  controlID: 126
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 313
     height: 374
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 56
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 38
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/TapsellPlus
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/TapsellPlus
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\projects\pegah\tapsell\TapsellPlusUnity\2019\Gradle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c6340000
-    m_LastClickedID: 13510
-    m_ExpandedIDs: 00000000ba340000bc340000
+    m_SelectedIDs: c8340000
+    m_LastClickedID: 13512
+    m_ExpandedIDs: 00000000b8340000ba340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ba340000bc340000
+    m_ExpandedIDs: 00000000b8340000ba340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,7 +504,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4ef6ffff68f6ffff6af6ffff6ef6ffff72f6ffff76f6ffff7af6ffff9cf7ffff30f8ffff4af8ffffe2f8ffffe8f8ffffeef8fffff4f8fffff8f8ffffcef9ffffeaf9ffff82faffff88faffff8efaffff94faffff98faffff66fbffff5c3b0000d03b00000a3c0000163c0000
+      m_ExpandedIDs: caf5ffffe4f5ffff8ef6ffff94f6ffff9af6ffffa0f6ffffa4f6ffff44f7ffff5ef7ffff60f7ffff64f7ffff68f7ffff6cf7ffff70f7ffffd8f7fffff2f7fffff4f7fffff8f7fffffcf7ffff00f8ffff04f8ffff6cf8ffff86f8ffff88f8ffff8cf8ffff90f8ffff94f8ffff98f8ffffd2f8ffffeef8ffff9cf9ffffa6f9ffffb0f9ffffbaf9ffffc2f9ffff30faffff68fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 627.6267, y: 870.5971, z: 3915.25}
+    m_Target: {x: 16.25264, y: 10.692429, z: 491.40088}
     speed: 2
-    m_Value: {x: 627.6267, y: 870.5971, z: 3915.25}
+    m_Value: {x: 16.25264, y: 10.692429, z: 491.40088}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1518.5735
+    m_Target: 55.32534
     speed: 2
-    m_Value: 1453.1804
+    m_Value: 55.32534
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 945, y: 179}
+  m_TargetSize: {x: 2960, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -692,10 +692,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -378
-    m_HBaseRangeMax: 378
-    m_VBaseRangeMin: -71.6
-    m_VBaseRangeMax: 71.6
+    m_HBaseRangeMin: -1184
+    m_HBaseRangeMax: 1184
+    m_VBaseRangeMin: -576
+    m_VBaseRangeMax: 576
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -715,7 +715,7 @@ MonoBehaviour:
       y: 21
       width: 945
       height: 179
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 0.15538195, y: 0.15538195}
     m_Translation: {x: 472.5, y: 89.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -723,12 +723,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -472.5
-      y: -89.5
-      width: 945
-      height: 179
+      x: -3040.8938
+      y: -576
+      width: 6081.7876
+      height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.15538195
   m_LastWindowPixelSize: {x: 1181.25, y: 250}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
