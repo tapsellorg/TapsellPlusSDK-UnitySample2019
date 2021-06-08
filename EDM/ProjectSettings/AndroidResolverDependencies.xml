@@ -5,7 +5,7 @@
     <package>com.chartboost:chartboost-sdk:8.2.0</package>
     <package>com.google.android.gms:play-services-ads:19.8.0</package>
     <package>com.unity3d.ads:unity-ads:3.7.1</package>
-    <package>ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.1</package>
+    <package>ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.2</package>
   </packages>
   <files>
     <file>Assets/Plugins/Android/androidx.annotation.annotation-1.1.0.jar</file>
@@ -71,8 +71,8 @@
     <file>Assets/Plugins/Android/com.squareup.retrofit2.converter-gson-2.6.4.jar</file>
     <file>Assets/Plugins/Android/com.squareup.retrofit2.retrofit-2.6.4.jar</file>
     <file>Assets/Plugins/Android/com.unity3d.ads.unity-ads-3.7.1.aar</file>
-    <file>Assets/Plugins/Android/ir.tapsell.plus.tapsell-plus-sdk-unity-2.1.1.aar</file>
-    <file>Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-android-4.7.0.aar</file>
+    <file>Assets/Plugins/Android/ir.tapsell.plus.tapsell-plus-sdk-unity-2.1.2.aar</file>
+    <file>Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-android-4.7.1.aar</file>
   </files>
   <settings>
     <setting name="androidAbis" value="armeabi-v7a" />

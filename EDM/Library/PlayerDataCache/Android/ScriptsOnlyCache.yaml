@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - NativeBannerScene
     - RewardedScene
     - StandardBannerScene
+    GoogleMobileAds.Placement.dll:
+    - GoogleMobileAds.Placement.GoogleMobileAdsPlacements
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -60,7 +62,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 13976}
+      Script: {instanceID: 13870}
+    - Class: 114
+      Script: {instanceID: 14068}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -662,12 +666,6 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.dll
-    namespaceName: _7r15yutInLmaQcwbhRJ7kS4iozt
-    className: _BZblwmNmKFIT9B0hexdBRfJIngo
-  - hash:
-      serializedVersion: 2
       Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -768,6 +766,66 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: be3a6777d52d21b47409269c17729c50
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: BannerAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 522be92e93fc64af7517a8f3fe640182
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: GoogleMobileAdsPlacements
+  - hash:
+      serializedVersion: 2
+      Hash: dac4101169bf92007c0c333d0979a987
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: InterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 5e89cff8b7412687a057ae1341e37bc7
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 6efaca0cedc339b24d85bb75266d3612
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: GoogleMobileAds.Placement
+    className: RewardedInterstitialAdGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: f3b0eec0c1f780b4de30724838cae200
+    assemblyName: GoogleMobileAds.Placement.dll
+    namespaceName: 
+    className: TestController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: ButtonBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: Countdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: 
+    className: DummyAdBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.dll
+    namespaceName: _1vxD40oOUsRFcyIsYSdDwOmD5AgA
+    className: _EZUY2sDrZ60wiKIRbwJMVaAWZ5G
   platform: 13
   scenePathNames:
   - Assets/Scenes/FirstScene.unity

@@ -1,6 +1,6 @@
 ﻿<dependencies>
     <androidPackages>
-        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.1"/>
+        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.2"/>
         <androidPackage spec="com.google.android.gms:play-services-ads:19.8.0"/>
         <androidPackage spec="com.unity3d.ads:unity-ads:3.7.1"/>
         <androidPackage spec="com.chartboost:chartboost-sdk:8.2.0"/>
