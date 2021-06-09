@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using TapsellPlusSDK;
 
 public class FirstScene : MonoBehaviour {
 
@@ -7,10 +8,10 @@ public class FirstScene : MonoBehaviour {
 
     void Start () {
 
-        TapsellPlus.TapsellPlus.Initialize(TapsellPlusKey,
+        TapsellPlus.Initialize(TapsellPlusKey,
             adNetworkName => Debug.Log(adNetworkName + " Initialized Successfully."),
             error => Debug.Log(error.ToString()));
-        TapsellPlus.TapsellPlus.SetGdprConsent(true);
+        TapsellPlus.SetGdprConsent(true);
     }
 
     public void ChangeScenes (string sceneName) {

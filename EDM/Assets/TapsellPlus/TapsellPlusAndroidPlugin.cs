@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TapsellPlus
+namespace TapsellPlusSDK
 {
     public class TapsellPlusAndroidPlugin : TapsellPlusPlugin
     {

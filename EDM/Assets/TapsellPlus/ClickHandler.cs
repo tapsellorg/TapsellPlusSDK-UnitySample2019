@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace TapsellPlus
+namespace TapsellPlusSDK
 {
     public class ClickHandler : MonoBehaviour
     {

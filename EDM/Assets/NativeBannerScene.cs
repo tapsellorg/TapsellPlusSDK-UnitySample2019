@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TapsellPlusSDK;
 
 public class NativeBannerScene : MonoBehaviour {
 	private const string ZoneID = "5cfaa9deaede570001d5553a";
@@ -9,7 +10,7 @@ public class NativeBannerScene : MonoBehaviour {
 	[SerializeField] private Text adCallToAction;
 	[SerializeField] private Text adBody;
 	public void Request () {
-		TapsellPlus.TapsellPlus.RequestNativeBannerAd(ZoneID,
+		TapsellPlus.RequestNativeBannerAd(ZoneID,
 
 			tapsellPlusAdModel => {
 				Debug.Log ("On Response " + tapsellPlusAdModel.responseId);
@@ -21,7 +22,7 @@ public class NativeBannerScene : MonoBehaviour {
 		);
     }
 	public void Show() {
-		TapsellPlus.TapsellPlus.ShowNativeBannerAd(_responseId, this,
+		TapsellPlus.ShowNativeBannerAd(_responseId, this,
 
 			tapsellPlusNativeBannerAd => {
 				Debug.Log ("onOpenAd " + tapsellPlusNativeBannerAd.zoneId);

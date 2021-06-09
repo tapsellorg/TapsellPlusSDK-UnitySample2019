@@ -1,12 +1,12 @@
-﻿using TapsellPlus.models;
-using UnityEngine;
+﻿using UnityEngine;
+using TapsellPlusSDK;
 
 public class StandardBannerScene : MonoBehaviour {
     private const string ZoneID = "5cfaaa30e8d17f0001ffb294";
     private static string _responseId;
 
     public void Request () {
-        TapsellPlus.TapsellPlus.RequestStandardBannerAd(ZoneID, BannerType.Banner320X50,
+        TapsellPlus.RequestStandardBannerAd(ZoneID, BannerType.Banner320X50,
             
             tapsellPlusAdModel => {
                 Debug.Log ("on response " + tapsellPlusAdModel.responseId);
@@ -20,7 +20,7 @@ public class StandardBannerScene : MonoBehaviour {
 
     public void Show()
     {
-        TapsellPlus.TapsellPlus.ShowStandardBannerAd(_responseId, Gravity.Bottom, Gravity.Center,
+        TapsellPlus.ShowStandardBannerAd(_responseId, Gravity.Bottom, Gravity.Center,
 
             tapsellPlusAdModel => {
                 Debug.Log ("onOpenAd " + tapsellPlusAdModel.zoneId);
@@ -32,15 +32,15 @@ public class StandardBannerScene : MonoBehaviour {
     }
 
     public void Hide () {
-        TapsellPlus.TapsellPlus.HideStandardBannerAd();
+        TapsellPlus.HideStandardBannerAd();
     }
 
     public void Display () {
-        TapsellPlus.TapsellPlus.DisplayStandardBannerAd();
+        TapsellPlus.DisplayStandardBannerAd();
     }
 
     public void Destroy()
     {
-        TapsellPlus.TapsellPlus.DestroyStandardBannerAd(_responseId);
+        TapsellPlus.DestroyStandardBannerAd(_responseId);
     }
 }
