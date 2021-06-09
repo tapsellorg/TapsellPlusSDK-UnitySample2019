@@ -1,4 +1,4 @@
-﻿namespace TapsellPlus.models
+﻿namespace TapsellPlusSDK
 {
     public struct BannerType
     {

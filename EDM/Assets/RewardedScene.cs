@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TapsellPlusSDK;
 
 public class RewardedScene : MonoBehaviour {
 	
@@ -6,7 +7,7 @@ public class RewardedScene : MonoBehaviour {
 	private static string _responseId;
 
 	public void Request () {
-		TapsellPlus.TapsellPlus.RequestRewardedVideoAd (ZoneID,
+		TapsellPlus.RequestRewardedVideoAd (ZoneID,
 
 			tapsellPlusAdModel => {
 				Debug.Log ("on response " + tapsellPlusAdModel.responseId);
@@ -19,7 +20,7 @@ public class RewardedScene : MonoBehaviour {
 	}
 
 	public void Show () {
-		TapsellPlus.TapsellPlus.ShowRewardedVideoAd(_responseId,
+		TapsellPlus.ShowRewardedVideoAd(_responseId,
 
 			tapsellPlusAdModel => {
 				Debug.Log ("onOpenAd " + tapsellPlusAdModel.zoneId);

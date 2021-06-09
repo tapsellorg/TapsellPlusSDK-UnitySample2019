@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using GoogleMobileAds.Api;
-using TapsellPlus.models;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TapsellPlus
+namespace TapsellPlusSDK
 {
     public class TapsellPlusNativeBannerAd : TapsellPlusAdModel
     {
@@ -33,9 +32,9 @@ namespace TapsellPlus
             _unifiedNativeAd = unifiedNativeAd;
         }
 
-        private void clicked()
+        private void Clicked()
         {
-            global::TapsellPlus.TapsellPlus.NativeBannerAdClicked(responseId);
+            TapsellPlus.NativeBannerAdClicked(responseId);
         }
 
         public void RegisterBodyTextGameObject(GameObject gameObject)
@@ -102,7 +101,7 @@ namespace TapsellPlus
                     component = gameObject.AddComponent<Button>();
                 }
                 
-                component.onClick.AddListener((clicked));
+                component.onClick.AddListener((Clicked));
             }
             else
             {
@@ -115,7 +114,7 @@ namespace TapsellPlus
                     collider = gameObject.AddComponent<Collider>();
                 }
 
-                collider.gameObject.AddComponent<ClickHandler>().ONClick += clicked;
+                collider.gameObject.AddComponent<ClickHandler>().ONClick += Clicked;
             }
         }
     }

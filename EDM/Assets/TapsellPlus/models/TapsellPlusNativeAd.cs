@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TapsellPlus.models
+namespace TapsellPlusSDK
 {
     [Serializable]
     public class TapsellPlusNativeAd : TapsellPlusAdModel

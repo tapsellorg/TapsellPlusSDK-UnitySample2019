@@ -3,12 +3,51 @@
   <component name="ChangeListManager">
     <list default="true" id="19b2085e-7c5d-47de-b700-70ee304a741d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../EDM/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/Artifacts/1c/1cb29561c55990dd2da59c35cf9e4efc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/Artifacts/49/49d79400f18a9c4400c98c086a8fd0c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/Artifacts/c2/c2481f3fe4ffd4d22afbe61a2a49294e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/Artifacts/eb/ebc8dba08c589d87df687da7fcf6b2ad" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../EDM/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gradle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gradle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FirstScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FirstScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InterstitialScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InterstitialScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NativeBannerScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NativeBannerScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RewardedScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RewardedScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StandardBannerScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StandardBannerScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdMobNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdMobNativeAd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdNetworkShowErrorModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdNetworkShowErrorModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/BannerType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/BannerType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/Gravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/Gravity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellNativeAd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdNetworkError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdNetworkError.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusErrorModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusErrorModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusNativeAd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusRequestError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusRequestError.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/0504803a47b6165728a9e2adcb465e05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1cb29561c55990dd2da59c35cf9e4efc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/576e6bf7ab9a399c27f53797603a910c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9d/9d2535459d5959eeb955f0c2c415c966" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bd5e7bbf88f3e7fb9584c7cc4b1f9bda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8bdc48d816a99c702342114be435c6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef6ebff3636eec6067e8bf638d9933a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +59,28 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/RewardedScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/InterstitialScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/StandardBannerScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Plugins/AndroidManifest.xml" />
       <option value="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/AdMobNativeAd.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdNetworkError.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusErrorModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusNativeAd.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusRequestError.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/AdNetworkShowErrorModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/BannerType.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/Gravity.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellNativeAd.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" />
+      <option value="$PROJECT_DIR$/Assets/FirstScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/InterstitialScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/RewardedScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/StandardBannerScene.cs" />
       <option value="$PROJECT_DIR$/Assets/NativeBannerScene.cs" />
     </changedPaths>
   </component>
@@ -75,6 +131,7 @@
       <workItem from="1622394372503" duration="827000" />
       <workItem from="1623061930378" duration="4000" />
       <workItem from="1623132882800" duration="1264000" />
+      <workItem from="1623217077667" duration="1048000" />
     </task>
     <servers />
   </component>

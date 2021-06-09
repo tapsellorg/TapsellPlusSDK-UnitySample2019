@@ -2,12 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using GoogleMobileAds.Api;
-using TapsellPlus.models;
 using UnityEngine;
 using UnityEngine.Networking;
 using Object = UnityEngine.Object;
 
-namespace TapsellPlus
+namespace TapsellPlusSDK
 {
     public static class TapsellPlus
     {

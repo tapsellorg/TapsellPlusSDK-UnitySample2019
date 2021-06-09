@@ -1,4 +1,4 @@
-namespace TapsellPlus
+namespace TapsellPlusSDK
 {
     public class TapsellPlusPlugin
     {

@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using TapsellPlusSDK;
 
 public class InterstitialScene : MonoBehaviour {
 	private const string ZoneID = "5cfaa942e8d17f0001ffb292";
 	private static string _responseId;
 	
 	public void Request () {
-		TapsellPlus.TapsellPlus.RequestInterstitialAd(ZoneID,
+		TapsellPlus.RequestInterstitialAd(ZoneID,
 
 			tapsellPlusAdModel => {
 				Debug.Log ("on response " + tapsellPlusAdModel.responseId);
@@ -17,7 +18,7 @@ public class InterstitialScene : MonoBehaviour {
 		);
 	}
 	public void Show () {
-		TapsellPlus.TapsellPlus.ShowInterstitialAd(_responseId,
+		TapsellPlus.ShowInterstitialAd(_responseId,
 
 			tapsellPlusAdModel => {
 				Debug.Log ("onOpenAd " + tapsellPlusAdModel.zoneId);
