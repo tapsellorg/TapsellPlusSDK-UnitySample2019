@@ -8,5 +8,6 @@
         public const int Banner300X250 = 4;
         public const int Banner468X60 = 5;
         public const int Banner728X90 = 6;
+        public const int Banner160x600 = 7;
     }
 }
