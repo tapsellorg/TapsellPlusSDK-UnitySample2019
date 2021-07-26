@@ -36,6 +36,11 @@
         android:value="true" />
     </activity>
 
+    <!-- NOTE: This is for test - Production needs it's own appId. Refer to docs.tapsell.ir for more intformation -->
+    <meta-data
+      android:name="com.google.android.gms.ads.APPLICATION_ID"
+      android:value="ca-app-pub-3940256099942544~3347511713"/>
+
  </application>
 
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="30" />
