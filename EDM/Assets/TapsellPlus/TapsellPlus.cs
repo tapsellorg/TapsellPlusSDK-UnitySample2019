@@ -13,26 +13,19 @@ namespace TapsellPlusSDK
         private static Action<string> _successInitializeCallback;
         private static Action<TapsellPlusAdNetworkError> _failedInitializeCallback;
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RequestResponseCallbackPool
-            = new Dictionary<string, Action<TapsellPlusAdModel>>();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RequestResponseCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusRequestError>> RequestErrorCallbackPool
-            = new Dictionary<string, Action<TapsellPlusRequestError>>();
+        private static readonly Dictionary<string, Action<TapsellPlusRequestError>> RequestErrorCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> OpenAdCallbackPool
-            = new Dictionary<string, Action<TapsellPlusAdModel>>();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> OpenAdCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> CloseAdCallbackPool
-            = new Dictionary<string, Action<TapsellPlusAdModel>>();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> CloseAdCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RewardAdCallbackPool
-            = new Dictionary<string, Action<TapsellPlusAdModel>>();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RewardAdCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusErrorModel>> ShowErrorAdCallbackPool
-            = new Dictionary<string, Action<TapsellPlusErrorModel>>();
+        private static readonly Dictionary<string, Action<TapsellPlusErrorModel>> ShowErrorAdCallbackPool = new();
 
-        private static readonly Dictionary<string, Action<TapsellPlusNativeBannerAd>> OpenNativeAdCallbackPool
-            = new Dictionary<string, Action<TapsellPlusNativeBannerAd>>();
+        private static readonly Dictionary<string, Action<TapsellPlusNativeBannerAd>> OpenNativeAdCallbackPool = new();
 
         private static MonoBehaviour _mMonoBehaviour;
         private static GameObject _tapsellPlusManager;
@@ -192,7 +185,7 @@ namespace TapsellPlusSDK
                 if (_mMonoBehaviour != null && _mMonoBehaviour.isActiveAndEnabled)
                 {
                     if (tapsellPlusNativeAd.generalNativeAdModel.adNetwork.Equals("TAPSELL",
-                        StringComparison.InvariantCultureIgnoreCase))
+                            StringComparison.InvariantCultureIgnoreCase))
                         _mMonoBehaviour.StartCoroutine(LoadTapsellNativeAdComponents(tapsellPlusNativeAd));
                 }
                 else
@@ -220,7 +213,8 @@ namespace TapsellPlusSDK
             {
                 var wwwIcon = UnityWebRequestTexture.GetTexture(tapsellNativeAd.iconUrl);
                 yield return wwwIcon.SendWebRequest();
-                if (wwwIcon.result == UnityWebRequest.Result.ConnectionError || wwwIcon.result == UnityWebRequest.Result.ProtocolError)
+                if (wwwIcon.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwIcon.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwIcon.error);
                 else
                     iconImage = ((DownloadHandlerTexture) wwwIcon.downloadHandler).texture;
@@ -230,7 +224,8 @@ namespace TapsellPlusSDK
             {
                 var wwwPortrait = UnityWebRequestTexture.GetTexture(tapsellNativeAd.portraitStaticImageUrl);
                 yield return wwwPortrait.SendWebRequest();
-                if (wwwPortrait.result == UnityWebRequest.Result.ConnectionError || wwwPortrait.result == UnityWebRequest.Result.ProtocolError)
+                if (wwwPortrait.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwPortrait.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwPortrait.error);
                 else
                     portraitBannerImage = ((DownloadHandlerTexture) wwwPortrait.downloadHandler).texture;
@@ -240,7 +235,8 @@ namespace TapsellPlusSDK
             {
                 var wwwLandscape = UnityWebRequestTexture.GetTexture(tapsellNativeAd.landscapeStaticImageUrl);
                 yield return wwwLandscape.SendWebRequest();
-                if (wwwLandscape.result == UnityWebRequest.Result.ConnectionError || wwwLandscape.result == UnityWebRequest.Result.ProtocolError)
+                if (wwwLandscape.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwLandscape.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwLandscape.error);
                 else
                     landscapeBannerImage = ((DownloadHandlerTexture) wwwLandscape.downloadHandler).texture;
@@ -352,7 +348,7 @@ namespace TapsellPlusSDK
 
         public static void SetGdprConsent(bool consent)
         {
-#if UNITY_ANDROID && !UNITY_EDITOR            
+#if UNITY_ANDROID && !UNITY_EDITOR
             _plugin.SetGdprConsent(consent);
 #endif
         }
