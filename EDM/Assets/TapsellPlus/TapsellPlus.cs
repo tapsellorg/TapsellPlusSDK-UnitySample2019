@@ -13,19 +13,26 @@ namespace TapsellPlusSDK
         private static Action<string> _successInitializeCallback;
         private static Action<TapsellPlusAdNetworkError> _failedInitializeCallback;
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RequestResponseCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RequestResponseCallbackPool =
+            new Dictionary<String, Action<TapsellPlusAdModel>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusRequestError>> RequestErrorCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusRequestError>> RequestErrorCallbackPool =
+            new Dictionary<String, Action<TapsellPlusRequestError>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> OpenAdCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> OpenAdCallbackPool =
+            new Dictionary<String, Action<TapsellPlusAdModel>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> CloseAdCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> CloseAdCallbackPool =
+            new Dictionary<String, Action<TapsellPlusAdModel>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RewardAdCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusAdModel>> RewardAdCallbackPool =
+            new Dictionary<String, Action<TapsellPlusAdModel>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusErrorModel>> ShowErrorAdCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusErrorModel>> ShowErrorAdCallbackPool =
+            new Dictionary<String, Action<TapsellPlusErrorModel>>();
 
-        private static readonly Dictionary<string, Action<TapsellPlusNativeBannerAd>> OpenNativeAdCallbackPool = new();
+        private static readonly Dictionary<string, Action<TapsellPlusNativeBannerAd>> OpenNativeAdCallbackPool =
+            new Dictionary<String, Action<TapsellPlusNativeBannerAd>>();
 
         private static MonoBehaviour _mMonoBehaviour;
         private static GameObject _tapsellPlusManager;

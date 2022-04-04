@@ -220,7 +220,8 @@ namespace TapsellPlusSDK
             {
                 var wwwIcon = UnityWebRequestTexture.GetTexture(tapsellNativeAd.iconUrl);
                 yield return wwwIcon.SendWebRequest();
-                if (wwwIcon.isNetworkError || wwwIcon.isHttpError)
+                if (wwwIcon.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwIcon.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwIcon.error);
                 else
                     iconImage = ((DownloadHandlerTexture) wwwIcon.downloadHandler).texture;
@@ -230,7 +231,8 @@ namespace TapsellPlusSDK
             {
                 var wwwPortrait = UnityWebRequestTexture.GetTexture(tapsellNativeAd.portraitStaticImageUrl);
                 yield return wwwPortrait.SendWebRequest();
-                if (wwwPortrait.isNetworkError || wwwPortrait.isHttpError)
+                if (wwwPortrait.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwPortrait.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwPortrait.error);
                 else
                     portraitBannerImage = ((DownloadHandlerTexture) wwwPortrait.downloadHandler).texture;
@@ -240,7 +242,8 @@ namespace TapsellPlusSDK
             {
                 var wwwLandscape = UnityWebRequestTexture.GetTexture(tapsellNativeAd.landscapeStaticImageUrl);
                 yield return wwwLandscape.SendWebRequest();
-                if (wwwLandscape.isNetworkError || wwwLandscape.isHttpError)
+                if (wwwLandscape.result == UnityWebRequest.Result.ConnectionError ||
+                    wwwLandscape.result == UnityWebRequest.Result.ProtocolError)
                     Debug.Log(wwwLandscape.error);
                 else
                     landscapeBannerImage = ((DownloadHandlerTexture) wwwLandscape.downloadHandler).texture;

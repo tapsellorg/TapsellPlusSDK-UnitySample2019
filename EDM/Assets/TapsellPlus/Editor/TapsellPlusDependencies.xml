@@ -5,10 +5,10 @@
 <!--            <repository>https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea</repository>-->
         </repositories>
         
-        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.6"/>
+        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.7"/>
         
         <!-- AdMob -->
-<!--        <androidPackage spec="com.google.android.gms:play-services-ads:20.4.0"/>-->
+<!--        <androidPackage spec="com.google.android.gms:play-services-ads:20.6.0"/>-->
 
         <!-- UnityAds -->
 <!--        <androidPackage spec="com.unity3d.ads:unity-ads:3.7.5"/>-->
