@@ -1,61 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b2085e-7c5d-47de-b700-70ee304a741d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDM/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/Library/SourceAssetDB" afterDir="false" />
+    <list default="true" id="19b2085e-7c5d-47de-b700-70ee304a741d" name="Default Changelist" comment="chore(Gradle): Update TapsellPlus gradle unity version to 2.1.7 and other AdNetworks">
+      <change beforePath="$PROJECT_DIR$/../EDM/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EDM/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../EDM/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gradle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gradle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FirstScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FirstScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InterstitialScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InterstitialScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NativeBannerScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NativeBannerScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RewardedScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RewardedScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StandardBannerScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StandardBannerScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdMobNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdMobNativeAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdNetworkShowErrorModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/AdNetworkShowErrorModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/BannerType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/BannerType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/Gravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/Gravity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellNativeAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdNetworkError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusAdNetworkError.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusErrorModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusErrorModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusNativeAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusNativeAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusRequestError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TapsellPlus/models/TapsellPlusRequestError.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/0504803a47b6165728a9e2adcb465e05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1cb29561c55990dd2da59c35cf9e4efc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/576e6bf7ab9a399c27f53797603a910c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9d/9d2535459d5959eeb955f0c2c415c966" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bd5e7bbf88f3e7fb9584c7cc4b1f9bda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8bdc48d816a99c702342114be435c6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef6ebff3636eec6067e8bf638d9933a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/data.unity3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/mone/Document/Development/Android/Kotlin/MyProjects/Tapsell/TapsellPlusSDK-UnitySample2019/EDM/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mone/Document/Development/Android/Kotlin/MyProjects/Tapsell/TapsellPlusSDK-UnitySample2019/EDM/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mone/Document/Development/Android/Kotlin/MyProjects/Tapsell/TapsellPlusSDK-UnitySample2019/EDM/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mone/Document/Development/Android/Kotlin/MyProjects/Tapsell/TapsellPlusSDK-UnitySample2019/Gradle/Assets/TapsellPlus/TapsellPlus.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -84,21 +63,38 @@
       <option value="$PROJECT_DIR$/Assets/NativeBannerScene.cs" />
     </changedPaths>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1tGTJ7toSUa14H87PJLdFnJZw29" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "rider.run.widget.enabled.cache": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2020.3.30f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -132,12 +128,36 @@
       <workItem from="1623061930378" duration="4000" />
       <workItem from="1623132882800" duration="1264000" />
       <workItem from="1623217077667" duration="1048000" />
+      <workItem from="1649063341463" duration="2241000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor(Gradle): upgrade deprecated UnityWebRequest APIs">
+      <created>1649065299612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649065299612</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix(Gradle): remove minSdkVersion and targetSdkVersion from manifest due to compile error">
+      <created>1649065455747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649065455747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore(Gradle): Update TapsellPlus gradle unity version to 2.1.7 and other AdNetworks">
+      <created>1649065544824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649065544824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,9 +170,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="refactor(Gradle): upgrade deprecated UnityWebRequest APIs" />
+    <MESSAGE value="fix(Gradle): remove minSdkVersion and targetSdkVersion from manifest due to compile error" />
+    <MESSAGE value="chore(Gradle): Update TapsellPlus gradle unity version to 2.1.7 and other AdNetworks" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(Gradle): Update TapsellPlus gradle unity version to 2.1.7 and other AdNetworks" />
   </component>
 </project>
